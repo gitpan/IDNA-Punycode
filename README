@@ -1,23 +1,30 @@
-IDNA::Punycode - conversion from IDN domain names to Punycode and back
-======================================================================
+OVERVIEW
 
-1. DESCRIPTION
---------------
+  IDNA::Punycode     -- DEPRECATED module for IDNA and Punyode
 
-IDNA::Punycode will convert a domain-name from the "native" IDN
-(Internationalized Domain Name) form, i.e., a domain-name
-containing non-ASCII characters, into it's corresponding
-ACE (ASCII Compatible Encoding), and vice versa.
+INSTALLATION
 
-Before you do the ACE conversion, however, you must first "normalize"
-the string to convert using Net::IDN::Nameprep.  See RFC3940
-(http://www.ietf.org/rfc/rfc3490.txt) for more information.
+  To install this module type the following:
 
-IDNA::Punycode has no dependencies.
+    perl Build.PL
+    ./Build
+    ./Build test
+    ./Build install
 
-2. COPYRIGHT
-------------
+DEPENDENCIES
 
-Copyright (c) Tatsuhiko Miyagawa <miyagawa@bulknews.net>. This program
-is free software; you can redistribute it and/or modify it under the
-same terms as Perl itself
+  This module requires these other modules and libraries:
+
+    Net::IDN::Encode	(in Net-IDN-Encode)
+    Net::IDN::Punycode	(in Net-IDN-Encode)
+    Net::IDN::Nameprep	(indirectly)
+    Unicode::Stringprep (indirectly)
+
+AUTHOR
+
+  Claus Färber <CFAERBER@cpan.org>
+
+PREVIOUS AUTHORS
+
+  Tatsuhiko Miyagawa <miyagawa@bulknews.net>
+  Robert Urban <urban@UNIX-Beratung.de>

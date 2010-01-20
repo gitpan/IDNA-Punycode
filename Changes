@@ -1,5 +1,9 @@
 Revision history for Perl extension IDNA::Punycode
 
+1.00 (2009-01-01)
+	- complete rewrite based on Net::IDN::Punycode/::Encode
+	- deprecate this module, only provide it for compatibility
+
 0.03  Thu Sep  1 14:49:17 MEST 2005
 	* added idn_prefix() function
 	* made "xn--" default prefix for punycode format
