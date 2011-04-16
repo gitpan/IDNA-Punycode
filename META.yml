@@ -1,25 +1,25 @@
 ---
-name: IDNA-Punycode
-version: 1.001
+abstract: 'DEPRECATED module for IDNA and Punyode'
 author:
   - 'Claus Färber <CFAERBER@cpan.org>'
-abstract: DEPRECATED module for IDNA and Punyode
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
 build_requires:
   Test::More: 0
   Test::NoWarnings: 0
-requires:
-  Net::IDN::Encode: 1
-  Net::IDN::Punycode: 1
 configure_requires:
-  Module::Build: 0.35
-provides:
-  IDNA::Punycode:
-    file: lib/IDNA/Punycode.pm
-    version: 1.001
-generated_by: Module::Build version 0.35
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3624'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
+name: IDNA-Punycode
+provides:
+  IDNA::Punycode:
+    file: lib/IDNA/Punycode.pm
+    version: 1.100
+requires:
+  Net::IDN::Nameprep: 1
+  Net::IDN::Punycode: 1
+resources:
+  license: http://dev.perl.org/licenses/
+version: 1.100
